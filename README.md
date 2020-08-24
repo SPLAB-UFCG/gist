@@ -1,34 +1,28 @@
-# oss-template
+# SPLab Gists
 
-> Pequena descrição do que seu projeto faz.
+Coletânea de códigos para estudou ou referência. O objetivo é aprender e compartilhar aprendizagem.
 
-<!-- Descreva aqui no início os objetivos do seu projeto. -->
+O repositório é organizado por linguagem de programação e por tarefa proposta.
 
-Um template para seu projeto Open Source contendo os arquivos essenciais. Mude os tópicos desse `README.md` para conter as informações necessárias do seu projeto. Nesse template irá conter:
+Cada script/arquivo/módulo deve:
 
-- `README.md`: Uma estrutura básica para descrever o que é seu projeto e como utilizá-lo.
-- `LICENSE`: A licença está como **MIT**, edite para outra caso necessário. Use o [choosealicense](https://choosealicense.com/) para ajudar.
-- `CONTRIBUTING.md`: Arquivo opcional onde pode conter mais detalhes de como contribuir para seu projeto.
-- `CODE_OF_CONDUCT.md`: Código de conduta baseado no [Contributor Covenant](https://www.contributor-covenant.org). Adapte se necessário.
-- `github/ISSUE_TEMPLATE`: Template para issues.
-- `github/PULL_REQUEST_TEMPLATE`: Template para pull requests.
+* não depender de outros arquivos locais
+* indicar como importar/instalar qualquer biblioteca necessária
+* indicar como executar corretamente, de preferência durante a execução do código sem argumentos
+* trabalhar com a entrada e saída, e/ou com argumentos (recebendo arquivos a serem processados, por exemplo)
 
 ## Como Usar
 
-<!-- Descreva como um usuário pode utilizar seu projeto. -->
+Procure pelo código de interesse de acordo com a linguagem. Cada arquivo pode fazer uso de bibliotecas externas e, idealmente, indicará isso via comentário no começo do arquivo.
 
 ## Desenvolvimento
 
-Descreva quais tecnologias necessárias para sua aplicação funcionar e adicione referências.
-
-```
-caso sua aplicação exija um comando para rodar, coloque aqui.
-```
+Você é livre para propor alterações nos códigos existentes e propôr novos códigos! :)
 
 ## Como Contribuir
 
-<!-- Descreva informações necessárias para contribuir. Se necessário referencie o CONTRIBUTING.md -->
+Todo código deve ser submetivo via pull request. Só serão aceitos códigos simples e pequenos.
 
 ## Licença
 
-MIT © [SeuProjeto]()
+MIT ©
