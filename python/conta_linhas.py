@@ -5,4 +5,4 @@ if len(sys.argv) == 1:
     exit(1)
 
 with open(sys.argv[1]) as open_f:
-    print(open_f.read().count('\n')) + 1
+    print(open_f.read().count('\n') + 1)
