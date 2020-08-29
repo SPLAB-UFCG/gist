@@ -21,7 +21,7 @@ def ler_arquivo():
                 break
             if line.lstrip().startswith("for "):
                 para += 1
-            if line.lstrip().startswith("if "):
+            if line.lstrip().startswith("if ") or line.lstrip().startswith("if(") or line.lstrip().startswith("elif ") or line.lstrip().startswith("elif("):
                 se += 1
             if line.lstrip().startswith("while "):
                 enquanto += 1
