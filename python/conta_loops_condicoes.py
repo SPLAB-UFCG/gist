@@ -1,11 +1,12 @@
 #importação do módulo sys
 import sys
 
-
+#Checa se algum parâmetro (Nome de algum arquivo) foi passado para o programa 
 if len(sys.argv) == 1:
     print("Indique o arquivo a ser processado como parâmetro. Ex: " + sys.argv[0] + " exemplo.txt")
     exit(1)
 
+#Checa linha a linha se as condicionais ou loops se encontram nela e armazena em contadores suas quantidade.
 def ler_arquivo():
     para = 0
     se = 0
