@@ -43,9 +43,10 @@ public class SheetExample {
     private static final List<String> SCOPES = Collections.singletonList(SheetsScopes.SPREADSHEETS_READONLY);
     private static final String CREDENTIALS_FILE_PATH = "/credentials.json";
 
-
+   
 
     /**
+     * É Utilizada a api do google spreadsheet para interaçã com as planilhas
      * Olha a nota dos alunos na planilha, calcula a média e indica quem foi aprovado
      * planilha utilizada:
      * https://docs.google.com/spreadsheets/d/1RBo9Se3c19e1s7r_IbL97Gb3HoMbum1bzo56psYafCw/edit#gid=0
@@ -68,7 +69,12 @@ public class SheetExample {
             System.out.println("No data found.");
         } else {
             for (List row : values) {
-                // Print columns A and E, which correspond to indices 0 and 4.
+                
+                
+                /*
+                 * É realizada a soma das medias dos alunos, e logo em seguida são
+                 * printadas no os nomes e se foram aprovados ou não
+                 */
             	if(aprovado((String) row.get(1), (String) row.get(2), (String) row.get(3))) {
             		System.out.println( row.get(0) + ": aprovado");
             	} else {
@@ -78,6 +84,7 @@ public class SheetExample {
         }
     }
     
+    //Metodo simples para realizar a media dos alunos
     private static boolean aprovado(String nota1,String nota2, String nota3) {
     	int n1 = Integer.parseInt(nota1);
     	int n2 = Integer.parseInt(nota2);
@@ -88,10 +95,8 @@ public class SheetExample {
     	return false;
     }
     /**
-     * Creates an authorized Credential object.
-     * @param HTTP_TRANSPORT The network HTTP Transport.
-     * @return An authorized Credential object.
-     * @throws IOException If the credentials.json file cannot be found.
+     * Cria credenciais validas para autorização.
+     * É encontrando todo esse metodo original na documentação da api do google spreadsheet
      */
     private static Credential getCredentials(final NetHttpTransport HTTP_TRANSPORT) throws IOException {
         // Load client secrets.
